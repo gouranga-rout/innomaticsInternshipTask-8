@@ -1,0 +1,283 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #160930 !important;
+}
+
+
+.navbar-custom {
+  background-color: #fff;
+  box-shadow: 0 4px 8px #0ef;
+  display: inline;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  width: 45vw;
+  height: auto;
+  max-width: 30rem;
+}
+
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  background: crimson !important;
+}
+
+.nav-link {
+  color: crimson !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+  color: green !important;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.dashboard-container {
+  background-color: #160930;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+
+.home-heading {
+  color: crimson; 
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0 3rem;
+  box-shadow: 0 2px 10px #0ef;
+}
+
+
+.dashboard-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: crimson;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Chart Container Styling */
+.chart-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #0ef;
+}
+
+/* ChartJS Legend Styling */
+.chart-container .chartjs-render-monitor {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Total Students Box */
+.total-students-box {
+  background-color: #fff;
+  color: crimson;
+  text-align: center;
+  box-shadow: 0 2px 10px #0ef;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 30%;
+}
+
+/*per class students*/
+.students-per-class {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 30%;
+}
+.students-per-class p {
+  margin: 4px 0;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 4px;
+  text-align: center;
+  box-shadow: 0 2px 10px #0ef;
+  background-color: #fff;
+  color: #000;
+}
+
+
+/*student list*/
+.studntList-container,
+.studentDetails-container,
+.edit-container,
+.register-container {
+  background-color: #160930;;
+  padding: 2rem;
+  border-radius: 8px;
+  min-height: 100vh;
+}
+
+.inborder {
+ border: 1px solid #0ef !important;
+}
+
+.inborder:focus {
+ box-shadow: 0 2px 10px #0ef !important;
+}
+
+
+/* Card Styling */
+.edit-student-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h2 {
+  color: #343a40;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+/* Table Styling */
+.table {
+  border-radius: 8px;
+}
+
+th {
+ color: #fff !important;
+ background-color: crimson !important;
+ text-align: center !important;
+}
+
+.btn-group {
+  gap: 5px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: crimson;
+}
+
+.pagination .page-link:hover {
+  color: white;
+  background-color: crimson;
+}
+
+/*students details*/
+.glow {
+  box-shadow: 0 2px 10px #0ef !important;
+}
+
+.text {
+  color: crimson;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.responsive h4 {
+  font-weight: normal;
+}
+
+strong {
+ color: green;
+}
+
+.btn-crimson {
+  background-color: crimson !important;
+  color: white !important;
+  padding: .5rem .5rem;
+  border-radius: 5px;
+  Text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+}
+
+
+.btn-crimson:hover {
+  background-color: green !important;
+  box-shadow: 0 2px 10px green;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: .5rem;
+}
+
+/*student reg*/
+.field input {
+  border: 1px solid #0ef;
+}
+
+.field input:hover {
+  box-shadow: 0 2px 10px #0ef;
+}
+
+
+
+
+/*footer section*/
+
+footer {
+  box-shadow: 0px -4px 6px #0ef;
+  background-color: #fff;
+  bottom: 0;
+  
+}
+
+footer p {
+  text-align: center;
+  padding: 5px; 
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+footer p .brand {
+ color: crimson;
+ text-decoration: none;
+}
+
+footer p .brand:hover {
+  color: green;
+}
+
+@media only screen and (max-width: 768px) {
+  .total-students-box {
+    margin: 2rem 10%;
+  } 
+
+  .students-per-class {
+    margin: 0 5% ;
+  }
+  
+  .btn-container {
+    padding: 0rem;
+    flex-direction: column;
+  }
+
+ 
+}
+
